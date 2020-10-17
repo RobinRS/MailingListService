@@ -1,0 +1,15 @@
+{
+  "name": "maillistservice",
+  "version": "1.0.0",
+  "description": "A simple webservice for sending mails to a group without exposing the e-mail-address",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robin Schleser",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9"
+  }
+}
