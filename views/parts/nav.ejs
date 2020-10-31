@@ -1,0 +1,14 @@
+<nav>
+  <img src="img/icon.png" class="logo" alt="MyMailDL Logo">
+  <img src="img/burger.svg" class="burger" id="menu" alt="Navigation">
+  <div class="pseudo-bar"></div>
+
+  <div class="mobileNav">
+    <ul>
+      <li><a href="/" <%- (path == '/' ? 'class=selected' : '') %>>Home</a></li>
+      <li><a href="/join" <%- (path == '/join' ? 'class=selected' : '') %>>Join</a></li>
+      <li><a href="/create" <%- (path == '/create' ? 'class=selected' : '') %>>Create</a></li>
+      <li><a href="/lists" <%- (path == '/lists' ? 'class=selected' : '') %>>Lists</a></li>
+    </ul>
+</div>
+</nav>
