@@ -7,7 +7,9 @@
 <body>
   <%- include('../parts/nav'); %>
   <main>
-
+    <% if(path === '/') { %>
+      <%- include('../parts/main'); %>
+    <% } %>
   </main>
   <%- include('../parts/footer'); %>
   <%- include('../parts/scripts'); %>

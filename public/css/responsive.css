@@ -42,14 +42,14 @@
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 480px) {
   
   .pseudo-bar {
     display: block;
     margin: 0;
     padding: 0;
     background-color: var(--color-3);
-    height: 80px;
+    height: 70px;
   }
 
   .burger {
@@ -64,17 +64,17 @@
   }
 
   nav .mobileNav {
-    height: calc(100vh - 80px);
-    width: 100%;
+    height: calc(100vh - 70px);
     overflow-y: hidden;
     width: 0%;
+    position: absolute;
     animation-duration: .8s;
-    float: right;
+    right: 0;
   }
 
   nav ul {
     height: 100%;
-    padding-top: calc(50% - 40px);
+    padding-top: calc(50% - 35px);
     overflow-y: hidden;
     text-align: center;
   }
@@ -85,7 +85,102 @@
     font-size: 1.4rem;
     width: 100%;
   }
+
+  .action {
+    background-color: var(--color-2);
+    color: var(--text-color);
+    padding-top: 10vh;
+    position: relative;
+  }
   
+  .action form input, .action form p{
+    display: inline-block;
+  }
+  
+  .mailName {
+    background-color: #F2ECDB;
+    width: 85%;
+    height: 3rem;
+    margin: 0 7% 0 7%;
+    position: relative;
+  }
+  
+  .action form p {
+    right: 2%;
+    color: rgba(92, 57, 57, 0.5);
+    top: 0.6rem;
+    font-size: 1.2rem;
+  }
+  
+  .action form input[type="text"] {
+    width: 53%;
+    margin-top: 0.4rem;
+    padding: 0.5rem 0 0.5rem 0.4rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+  }
+  
+}
+
+@media (max-width: 320px) {
+
+  .pseudo-bar {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-3);
+    height: 70px;
+  }
+
+  .burger {
+    display: block;
+    height: 30px;
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  nav .mobileNav {
+    height: calc(100vh - 70px);
+    overflow-y: hidden;
+    width: 0%;
+    position: absolute;
+    animation-duration: .8s;
+    right: 0;
+    z-index: 3;
+  }
+
+  nav ul {
+    height: 100%;
+    padding-top: calc(50% - 35px);
+    overflow-y: hidden;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px;
+    font-size: 1.4rem;
+    width: 100%;
+  }
+
+
+  .action form p {
+    color: rgba(92, 57, 57, 0.5);
+    font-size: 1.0rem;
+  }
+
+  .action form input[type="text"] {
+    width: 53%;
+    margin-top: 0.4rem;
+    padding: 0.5rem 0 0.5rem 0.4rem;
+    font-size: 1.0rem;
+    
+  }
 }
 
 @keyframes expand {

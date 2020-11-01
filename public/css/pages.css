@@ -5,11 +5,12 @@
   --color-2: #6F9F95;
   --color-3: #193A37;
   --color-4: #D0826D;
-  --text-color:  #CBC1B0;
+  --text-color: #FEFEFE;
+  --text-color-dark: #193A37;
   font-family: 'Lato', sans-serif;
 }
 
-ul, a, p, body {
+ul, a, p, body, h2 {
   padding: 0;
   margin: 0;
 }
@@ -49,4 +50,77 @@ nav ul li {
 
 .pseudo-bar, .burger {
   display: none;
+}
+
+.textArea {
+  background-color: var(--color-2);
+  color: var(--text-color);
+}
+
+.textArea > h2 {
+  padding: 7vh 0 0 6vw;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+}
+
+.textArea > p {
+  margin: 0vh 0 0 6vw;
+  width: 90%;
+  font-size: 1.3rem;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+}
+
+.action {
+  background-color: var(--color-2);
+  color: var(--text-color);
+  padding-top: 10vh;
+  position: relative;
+  z-index: 2;
+}
+
+.action form input, .action form p{
+  display: inline-block;
+}
+
+.mailName {
+  background-color: #F2ECDB;
+  width: 85%;
+  height: 3rem;
+  margin: 0 7% 0 7%;
+  position: relative;
+}
+
+.action form p {
+  color: rgba(92, 57, 57, 0.5);
+  font-size: 1.2rem;
+  position: relative;
+  top: -0.1rem;
+}
+
+.action form input[type="text"] {
+  width: 53%;
+  margin-top: 0.6rem;
+  padding: 0.5rem 0 0.5rem 0.4rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-color: #F2ECDB;
+  color: var(--text-color-dark);
+  text-align: right;
+}
+
+.action form input[type="submit"] {
+  background-color: var(--color-4);
+  width: 85%;
+  height: 3rem;
+  margin: 0 7% 0 7%;
+  position: relative;
+
+  outline: none;
+  border: none;
+  position: relative;
+  top: 20px;
+  color: var(--text-color);
+  font-size: 1.5rem;
 }
